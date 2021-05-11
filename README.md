@@ -6,10 +6,10 @@ A simple calculator that works in portrait and landscape mode to perform basic c
 - Java
 
 ## Presentation - portrait layout
-![portrait](./doc/calculator-portrait.gif)
+<img src="https://github.com/SzymonT99/calculator/blob/master/doc/calculator-portrait.gif" width="400" height="800">
 
 ## Presentation - landscape layout
-![landscape](./doc/calculator-portrait.gif)
+<img src="https://github.com/SzymonT99/calculator/blob/master/doc/calculator-landscape.gif" width="400" height="800">
 
 
 
