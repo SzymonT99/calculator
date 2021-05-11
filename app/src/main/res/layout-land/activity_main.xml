@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOutput">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonClean"
+                style="@style/buttonStyle1"
+                android:onClick="clean"
+                android:text="AC" />
+
+            <Button
+                android:id="@+id/buttonChangeSign"
+                style="@style/buttonStyle1"
+                android:onClick="changeSign"
+                android:text="+/-" />
+
+            <Button
+                android:id="@+id/buttonModulo"
+                style="@style/buttonStyle1"
+                android:onClick="doMathematicalOperation"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/buttonDivision"
+                style="@style/buttonStyle2"
+                android:onClick="doMathematicalOperation"
+                android:text="/" />
+
+            <Button
+                android:id="@+id/buttonDecimalLogarithm"
+                style="@style/buttonStyle3"
+                android:onClick="doMathematicalOperation"
+                android:text="log10"
+                android:textAllCaps="false" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/buttonStyle1"
+                android:onClick="EnterNumber"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/buttonStyle1"
+                android:onClick="EnterNumber"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/buttonStyle1"
+                android:onClick="EnterNumber"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/buttonMultiplication"
+                style="@style/buttonStyle2"
+                android:onClick="doMathematicalOperation"
+                android:text="x"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/buttonFactorial"
+                style="@style/buttonStyle3"
+                android:onClick="doMathematicalOperation"
+                android:text="x!"
+                android:textAllCaps="false" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/buttonStyle1"
+                android:onClick="EnterNumber"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/buttonStyle1"
+                android:onClick="EnterNumber"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/buttonStyle1"
+                android:onClick="EnterNumber"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/buttonSubtraction"
+                style="@style/buttonStyle2"
+                android:onClick="doMathematicalOperation"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/buttonSqrt"
+                style="@style/buttonStyle3"
+                android:onClick="doMathematicalOperation"
+                android:text="SQRT(X)" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/buttonStyle1"
+                android:onClick="EnterNumber"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/buttonStyle1"
+                android:onClick="EnterNumber"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/buttonStyle1"
+                android:onClick="EnterNumber"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/buttonAddition"
+                style="@style/buttonStyle2"
+                android:onClick="doMathematicalOperation"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/buttonPower3"
+                style="@style/buttonStyle3"
+                android:onClick="doMathematicalOperation"
+                android:text="x^3"
+                android:textAllCaps="false" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button0"
+                style="@style/buttonStyle1"
+                android:onClick="EnterNumber"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/buttonNull"
+                style="@style/buttonStyle1"
+                android:clickable="false" />
+
+            <Button
+                android:id="@+id/buttonPoint"
+                style="@style/buttonStyle1"
+                android:onClick="makePoint"
+                android:text="," />
+
+            <Button
+                android:id="@+id/buttonEqual"
+                style="@style/buttonStyle2"
+                android:onClick="doMathematicalOperation"
+                android:text="=" />
+
+            <Button
+                android:id="@+id/buttonPower2"
+                style="@style/buttonStyle3"
+                android:onClick="doMathematicalOperation"
+                android:text="x^2"
+                android:textAllCaps="false" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textCalculations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#91C7DF"
+        android:gravity="center|right"
+        android:textColor="#151313"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/opensans"
+        app:layout_constraintBottom_toTopOf="@+id/textOutput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textOutput"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#91C7DF"
+        android:gravity="center|right"
+        android:text="0"
+        android:textColor="#151313"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/opensans"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCalculations" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
